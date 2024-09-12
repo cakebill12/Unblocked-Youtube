@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Search</title>
+    <title>YouTube</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="header">
-        <h1>YouTube Clone</h1>
+        <h1>YouTube Search</h1>
         <input type="text" id="search-input" placeholder="Search YouTube" />
         <button onclick="performSearch()">Search</button>
     </div>
 
     <div class="video-grid" id="results"></div>
+
+    <div class="pagination">
+        <button id="prev-button" onclick="prevPage()" disabled>Previous</button>
+        <button id="next-button" onclick="nextPage()">Next</button>
+    </div>
 
     <div class="video-player" id="video-player">
         <iframe id="youtube-player" width="800" height="450" src="" frameborder="0" allowfullscreen></iframe>
