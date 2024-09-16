@@ -1,3 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000;
+    padding: 20px;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: #ffdddd;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.video-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.video-item:hover {
+    transform: scale(1.05);
+}
+
+.video-item img {
+    width: 100%;
+    display: block;
+}
+
+.video-item h3 {
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -12,6 +86,7 @@
     background-color: #ff0000;
     color: white;
     border: none;
+    border-radius: 5px;
 }
 
 .pagination button:disabled {
@@ -21,4 +96,10 @@
 
 .pagination button:hover:not(:disabled) {
     background-color: #d60000;
+}
+
+.video-player {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
