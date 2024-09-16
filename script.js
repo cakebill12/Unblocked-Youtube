@@ -44,7 +44,7 @@ async function performSearch(pageToken = '') {
 
 // Function to fetch videos from YouTube API
 async function searchYouTube(query, pageToken = '') {
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&type=video&maxResults=20&pageToken=${pageToken}&key=${apiKey}`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&type=video&maxResults=30&pageToken=${pageToken}&key=${apiKey}`;
     const response = await fetch(url);
     const data = await response.json();
     return data; // Return full response including items and tokens
