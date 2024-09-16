@@ -56,6 +56,9 @@ function playVideo(videoId) {
     const videoPlayer = document.getElementById('video-player');
     player.src = `https://www.youtube.com/embed/${videoId}`;
     videoPlayer.style.display = 'flex';
+    
+    // Scroll to video player
+    videoPlayer.scrollIntoView({ behavior: 'smooth' });
 }
 
 // Navigate to the next page of results
